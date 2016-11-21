@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="head">
+        <image class="user-img" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="user-name">{{userInfo.nickName}}</text>
+    </view>
+    <view class="body">
+        <view class="order-classify">
+            <block wx:for="{{orderClassifyArray}}">
+                <view class="order-item">
+                    <image class="order-item-img" src="{{item['img']}}"></image>
+                    <text class="order-item-name">{{item["name"]}}</text>
+                </view>
+            </block>
+        </view>
+        <view class="mine-item-list">
+            <block wx:for="{{itemArray}}">
+                <view class="mine-item">
+                    <image class="mine-item-img" src="{{item['img']}}"></image>
+                    <text class="mine-item-name">{{item["name"]}}</text>
+                    <image class="mine-item-arrow" src="../../images/arrowright.png"></image>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

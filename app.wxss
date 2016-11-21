@@ -1,0 +1,6 @@
+/**app.wxss**/
+.container {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  background-color: gainsboro;
+  min-height: 100%;
+}
